@@ -158,7 +158,7 @@ ln -s ~/.macbootstrap/config/ranger/rc.conf "$old_rc_conf"
 
 ./install-steps/dependencies.before.sh
 
-unset ALL_PROXY
+#unset ALL_PROXY
 ./install-steps/dependencies.after.sh
 sudo ./install-steps/macos.sh
 ./install-steps/sogou_sync.sh
@@ -168,7 +168,7 @@ backup_file ~/.ssh/config
 if [[ ! -e ~/.ssh ]]; then
     mkdir ~/.ssh
 fi
-ln -s ~/.macbootstrap/zsh-config/ssh_config ~/.ssh/config
+#ln -s ~/.macbootstrap/zsh-config/ssh_config ~/.ssh/config
 
 # Personal
 ./install-steps/personal.sh
