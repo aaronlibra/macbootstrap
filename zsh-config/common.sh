@@ -12,6 +12,6 @@ source $BS_ZSH_BASE/zsh-config/fzf.sh
 for f in $BS_ZSH_BASE/zsh-config/functions/*.sh; do source $f; done
 
 # Script only for mac
-source $BS_ZSH_BASE/zsh-config/platform.mac.sh
-source $BS_ZSH_BASE/zsh-config/personalized.sh
+#source $BS_ZSH_BASE/zsh-config/platform.mac.sh
+#source $BS_ZSH_BASE/zsh-config/personalized.sh
 source $BS_ZSH_BASE/zsh-config/colors.sh
