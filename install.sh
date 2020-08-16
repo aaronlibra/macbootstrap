@@ -84,11 +84,11 @@ else
 fi
 
 # install jetbrain toolbox
-if [[ ! -e /Applications/JetBrains\ Toolbox.app ]]; then
-    brew cask install jetbrains-toolbox
-else
-    echo "You have installed JetBrains Toolbox"
-fi
+#if [[ ! -e /Applications/JetBrains\ Toolbox.app ]]; then
+#    brew cask install jetbrains-toolbox
+#else
+#    echo "You have installed JetBrains Toolbox"
+#fi
 
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 #brew install redis
@@ -135,7 +135,7 @@ ln -s ~/.macbootstrap/zsh-config/.zshrc ~/.zshrc
 # vim configuration
 backup_file ~/.vim
 backup_file ~/.config/nvim/
-git clone https://github.com/bestswifter/vim-config.git ~/.config/nvim
+git clone https://github.com/aaronlibra/vim-config.git ~/.config/nvim
 ln -s ~/.config/nvim ~/.vim
 backup_file ~/.ideavimrc
 ln -s ~/.config/ideavimrc ~/.ideavimrc
