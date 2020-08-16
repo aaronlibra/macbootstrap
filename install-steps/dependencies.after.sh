@@ -19,17 +19,17 @@ brew cask install the-unarchiver
 # ---------------
 
 # Install Charles
-if [[ -e /Applications/Charles.app ]]; then
-    echo "You have installed Charles"
-else
-    if [[ ! -e $HOME/Downloads/Charles.app.zip ]]; then
-        curl "http://app.bestswifter.com/Charles.app.zip" -o ~/Downloads/Charles.app.zip
-    fi
-
-    unzip -q $HOME/Downloads/Charles.app.zip -d /Applications
-    xattr -d com.apple.quarantine /Applications/Charles.app
-    rm $HOME/Downloads/Charles.app.zip
-fi
+#if [[ -e /Applications/Charles.app ]]; then
+#    echo "You have installed Charles"
+#else
+#    if [[ ! -e $HOME/Downloads/Charles.app.zip ]]; then
+#        curl "http://app.bestswifter.com/Charles.app.zip" -o ~/Downloads/Charles.app.zip
+#    fi#
+#
+#    unzip -q $HOME/Downloads/Charles.app.zip -d /Applications
+#    xattr -d com.apple.quarantine /Applications/Charles.app
+#    rm $HOME/Downloads/Charles.app.zip
+#fi
 
 # Install Dash
 if [[ -e /Applications/Dash.app ]]; then
@@ -58,16 +58,16 @@ else
 fi
 
 # Install iStatMenus
-if [[ -e "/Applications/iStat Menus.app" ]]; then
-    echo "You have installed iStat Menus"
-else
-    curl "http://app.bestswifter.com/iStatMenus.app.zip" -o ~/Downloads/iStatMenus.app.zip
-    unzip -q $HOME/Downloads/iStatMenus.app.zip -d /Applications
-    cp $HOME/.macbootstrap/config/com.bjango.istatmenus.plist ~/Library/Preferences/
-    rm ~/Library/Preferences/com.bjango.istatmenus6.extras.plist
-    ln -s $HOME/.macbootstrap/config/com.bjango.istatmenus6.extras.plist ~/Library/Preferences/
-    rm $HOME/Downloads/iStatMenus.app.zip
-fi
+#if [[ -e "/Applications/iStat Menus.app" ]]; then
+#    echo "You have installed iStat Menus"
+#else
+#    curl "http://app.bestswifter.com/iStatMenus.app.zip" -o ~/Downloads/iStatMenus.app.zip
+#    unzip -q $HOME/Downloads/iStatMenus.app.zip -d /Applications
+#    cp $HOME/.macbootstrap/config/com.bjango.istatmenus.plist ~/Library/Preferences/
+#    rm ~/Library/Preferences/com.bjango.istatmenus6.extras.plist
+#    ln -s $HOME/.macbootstrap/config/com.bjango.istatmenus6.extras.plist ~/Library/Preferences/
+#    rm $HOME/Downloads/iStatMenus.app.zip
+#fi
 
 # Install CleanMyMac X
 if [[ -e "/Applications/CleanMyMac X.app" ]]; then
@@ -92,10 +92,10 @@ pip3 install --trusted-host pypi.python.org neovim jedi ipython
 pip3 install --user --upgrade --trusted-host pypi.python.org PyYAML
 
 # Gem update
-sudo gem update --system 2.7.6
-sudo gem install -n /usr/local/bin cocoapods
-sudo gem install -n /usr/local/bin cocoapods-plugins
-sudo gem install colored
+#sudo gem update --system 2.7.6
+#sudo gem install -n /usr/local/bin cocoapods
+#sudo gem install -n /usr/local/bin cocoapods-plugins
+#sudo gem install colored
 
 # nvm & npm install
 if [[ ! -d $HOME/.nvm ]]; then
