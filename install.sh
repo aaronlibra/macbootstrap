@@ -135,7 +135,7 @@ ln -s ~/.macbootstrap/zsh-config/.zshrc ~/.zshrc
 # vim configuration
 backup_file ~/.vim
 backup_file ~/.config/nvim/
-git clone https://github.com/aaronlibra/vim-config.git ~/.config/nvim
+git clone https://github.com/bestswifter/vim-config.git ~/.config/nvim
 ln -s ~/.config/nvim ~/.vim
 backup_file ~/.ideavimrc
 ln -s ~/.config/ideavimrc ~/.ideavimrc
